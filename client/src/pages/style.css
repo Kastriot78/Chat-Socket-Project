@@ -1,0 +1,937 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+ol,
+ul,
+dl {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* register */
+.account-pages .title {
+    color: #495057;
+    font-weight: 500;
+}
+
+.register-card {
+    background-color: #fff;
+}
+
+.register-card form label {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    display: inline-block;
+    font-size: 16px;
+}
+
+/* register */
+
+.simplebar-content-wrapper::-webkit-scrollbar,
+.simplebar-hide-scrollbar::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+/* Set Avatar */
+.setAvatarContainer {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.setAvatarContainer {
+    text-align: center;
+}
+
+.setAvatarContainer .title-container h1 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.setAvatarContainer .avatars {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.4rem;
+}
+
+.setAvatarContainer .avatars .avatar {
+    border: 0.4rem solid transparent;
+    padding: 0.4rem;
+    border-radius: 100%;
+    transition: 0.5s ease-in-out;
+}
+
+.setAvatarContainer .avatars .avatar.selected {
+    border: 0.4rem solid #7269ef;
+}
+
+.setAvatarContainer .avatars .avatar img {
+    width: 6rem;
+    height: 6rem;
+    cursor: pointer;
+}
+
+.setAvatarContainer .submit-btn {
+    background-color: #7269ef;
+    border-color: #7269ef;
+    color: #fff;
+    min-width: 245px;
+    margin-top: 18px;
+}
+
+/* Set Avatar */
+
+/* Top Navbar */
+.chat-appbar-wrap {
+    display: flex;
+    align-items: center;
+}
+
+.appbar-logo {
+    display: inline-flex;
+    border-right: 1px solid #dbeafe;
+    padding: 1rem 1.5rem;
+}
+
+.logo-icon {
+    display: inline-flex;
+    height: 32px;
+}
+
+.logo-icon svg,
+.logo-icon img {
+    color: #1e293b;
+}
+
+.appbar-content {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.chat-appbar {
+    border-bottom: 1px solid #dbeafe;
+    position: fixed;
+    inset: 0 0 auto 0;
+    background: #fff;
+    border-bottom: 1px solid #dbeafe;
+    z-index: 1000;
+}
+
+.appbar-nav {
+    display: flex;
+    align-items: center;
+}
+
+.appbar-nav .dropdown-toggle::after {
+    display: none;
+}
+
+.appbar-nav:first-child {
+    padding-left: 0.875rem;
+}
+
+.appbar-nav li {
+    display: inline-flex;
+    padding-left: 0.5625rem;
+    padding-right: 0.5625rem;
+}
+
+.appbar-link.active,
+.active .appbar-link,
+.appbar-link:hover {
+    color: #2563eb;
+    background: #bfdbfe;
+}
+
+.appbar-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #334155;
+    background: #E2E8F0;
+    border-radius: 50rem;
+    height: 3rem;
+    width: 3rem;
+    transition: all 0.3s ease;
+}
+
+.appbar-link svg {
+    height: 1.25rem;
+    width: 1.25rem;
+}
+
+.appbar-nav:last-child {
+    padding-right: 0.875rem;
+}
+
+.tyn-circle {
+    --tyn-shape: 50%;
+}
+
+.tyn-media {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    background: #fff;
+}
+
+.tyn-media img {
+    height: 100%;
+    width: 100%;
+    border-radius: calc(50% - 1px);
+    object-fit: cover;
+}
+
+.dropdown-gap:not(:last-child) {
+    border-bottom: 1px solid rgba(51, 65, 85, 0.175);
+}
+
+.dropdown-gap {
+    padding: 1.125rem 1.25rem;
+}
+
+.tyn-media-group {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.tyn-media-col {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 0.25rem;
+    white-space: nowrap;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.tyn-media-row {
+    display: flex;
+    align-items: center;
+    gap: 0.375rem;
+    max-width: 100%;
+}
+
+.tyn-media-col .name {
+    margin-bottom: 0;
+    color: #64748b;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.tyn-media-col .indicator {
+    height: 0.625rem;
+    width: 0.625rem;
+    display: inline-flex;
+}
+
+.tyn-media-col .varified {
+    color: #2563eb;
+}
+
+.tyn-media-col .indicator .bi {
+    height: 100%;
+    width: 100%;
+}
+
+.tyn-media-row.has-dot-sap {
+    gap: 1rem;
+}
+
+.tyn-media-row.has-dot-sap>* {
+    position: relative;
+}
+
+.tyn-media-col .content {
+    font-size: 0.75rem;
+    color: var(--media-text);
+    margin-bottom: 0;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.tyn-list-links li {
+    width: 100%;
+}
+
+.tyn-list-links li a,
+.tyn-list-links li button:not(.btn) {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 0.675rem;
+    padding: 0.5rem 1.25rem;
+    color: #64748b;
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.tyn-list-links li a svg,
+.tyn-list-links li a .icon,
+.tyn-list-links li button:not(.btn) svg,
+.tyn-list-links li button:not(.btn) .icon {
+    height: 1rem;
+    width: 1rem;
+}
+
+.appbar-nav li .dropdown-menu {
+    max-width: 16rem;
+    inset: unset !important;
+    transform: unset !important;
+    right: 0 !important;
+    top: 60px !important;
+}
+
+.tyn-list-links li a:hover,
+.tyn-list-links li a:focus,
+.tyn-list-links li a.active,
+.tyn-list-links li button:not(.btn):hover,
+.tyn-list-links li button:not(.btn):focus,
+.tyn-list-links li button:not(.btn).active {
+    color: #2563eb;
+}
+
+/* Top Navbar */
+
+/* Contect */
+.chat-content {
+    margin-top: 73px;
+    position: relative;
+    overflow: hidden;
+    height: calc(100dvh - 73px);
+    z-index: 999;
+    flex-grow: 1;
+    display: flex;
+}
+
+.chat-sidebar-aside {
+    width: 360px;
+    height: calc(100dvh - 73px);
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    flex-shrink: 0;
+    overflow: hidden;
+    border-right: 1px solid #dbeafe;
+}
+
+.chat-sidebar-aside .aside-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.25rem 1.5rem;
+}
+
+.chat-sidebar-aside .aside-title {
+    font-size: 1.25rem;
+}
+
+.chat-sidebar-aside .aside-body {
+    max-height: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+[data-simplebar] {
+    position: relative;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+}
+
+.simplebar-wrapper {
+    overflow: hidden;
+    width: inherit;
+    height: inherit;
+    max-width: inherit;
+    max-height: inherit;
+}
+
+.simplebar-height-auto-observer-wrapper {
+    box-sizing: inherit !important;
+    height: 100%;
+    width: 100%;
+    max-width: 1px;
+    position: relative;
+    float: left;
+    max-height: 1px;
+    overflow: hidden;
+    z-index: -1;
+    padding: 0;
+    margin: 0;
+    pointer-events: none;
+    flex-grow: inherit;
+    flex-shrink: 0;
+    flex-basis: 0;
+}
+
+.simplebar-mask {
+    direction: inherit;
+    position: absolute;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: auto !important;
+    height: auto !important;
+    z-index: 0;
+}
+
+.simplebar-offset {
+    direction: inherit !important;
+    box-sizing: inherit !important;
+    resize: none !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 0;
+    margin: 0;
+    -webkit-overflow-scrolling: touch;
+}
+
+.simplebar-content-wrapper {
+    direction: inherit;
+    box-sizing: border-box !important;
+    position: relative;
+    display: block;
+    height: 100%;
+    width: auto;
+    max-width: 100%;
+    max-height: 100%;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.simplebar-content:before,
+.simplebar-content:after {
+    content: " ";
+    display: table;
+}
+
+.aside-search {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    padding: 0 1.5rem .75rem;
+    background: #fff;
+}
+
+/* .form-group {
+    font-size: 2.5rem;
+} */
+
+.form-control-wrap {
+    position: relative;
+}
+
+.form-control-icon.start {
+    left: 0;
+}
+
+.form-control-icon {
+    position: absolute;
+    height: 2.5rem;
+    width: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-control-icon svg {
+    height: calc(2.5rem / 2.75);
+    width: calc(2.5rem / 2.75);
+}
+
+.start~.form-control {
+    padding-left: 2.5rem;
+}
+
+.search-contacts {
+    background-color: #e2e8f0;
+    border: 1px solid #e2e8f0;
+    color: #64748b;
+    border-radius: 50rem;
+}
+
+.search-contacts:focus {
+    background-color: #dbeafe;
+    border-color: #dbeafe;
+}
+
+.tyn-chat-content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #dbeafe;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    max-width: 100%;
+    flex-grow: 1;
+    opacity: 1;
+    visibility: hidden;
+    display: none;
+}
+
+.tyn-chat-content.show {
+    display: flex;
+    opacity: 1;
+    visibility: visible;
+    z-index: 1000;
+}
+
+.chat-head {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 1.5rem;
+    background: #fff;
+    box-shadow: inset 0 -1px 0 #dbeafe;
+    z-index: 500;
+    margin: 0 -0.25rem;
+}
+
+.tyn-chat-head>* {
+    padding: 0 0.25rem;
+}
+
+.btn svg,
+.btn .icon {
+    height: 0.875rem;
+    width: 0.875rem;
+}
+
+.chat-head>* {
+    padding: 0 0.25rem;
+}
+
+.tyn-chat-body {
+    height: 100%;
+    max-height: 100%;
+    overflow: auto;
+    flex-grow: 1;
+}
+
+.media-group {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.media {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    height: var(--tyn-size);
+    width: var(--tyn-size);
+    border-radius: var(--tyn-shape);
+    background: var(--media-bg);
+}
+
+.tyn-size-lg {
+    width: 3rem;
+    height: 3rem;
+}
+
+.media img {
+    height: 100%;
+    width: 100%;
+    border-radius: calc(0.375rem - 1px);
+    object-fit: cover;
+}
+
+.tyn-reply-item {
+    display: flex;
+    align-items: flex-end;
+    padding: .5rem 1.5rem;
+}
+
+.avatar {
+    margin-right: .75rem;
+    flex-shrink: 0;
+    display: inline-flex;
+}
+
+.tyn-media img {
+    height: 100%;
+    width: 100%;
+    border-radius: calc(50% - 1px);
+    object-fit: cover;
+}
+
+.tyn-reply-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.reply-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.incoming .reply-group {
+    width: calc(100% - 2rem - .75rem);
+}
+
+.reply-bubble {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: max-content;
+    max-width: 100%;
+}
+
+.reply-group>*:not(:last-child) {
+    margin-bottom: 0.375rem;
+}
+
+.incoming .reply-group>*:first-child:not(:only-child) {
+    border-bottom-left-radius: .25rem;
+}
+
+.tyn-reply-text {
+    font-size: 0.833rem;
+    padding: 0.75rem 1rem;
+    border-radius: inherit;
+    color: #64748b;
+    background: #fff;
+}
+
+.reply-tools {
+    opacity: 0;
+    display: flex;
+    align-items: center;
+}
+
+.tyn-reply-bubble:hover .reply-tools {
+    opacity: 1;
+}
+
+.outgoing .tyn-reply-bubble {
+    flex-direction: row-reverse;
+}
+
+.outgoing .group {
+    align-items: flex-end;
+}
+
+.group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.outgoing .tyn-reply-text {
+    color: #fff;
+    background: #2563eb;
+}
+
+.outgoing .tyn-reply-tools {
+    right: 100%;
+    padding-right: 0.75rem;
+    flex-direction: row-reverse;
+}
+
+.tyn-reply-tools {
+    opacity: 0;
+    display: flex;
+    align-items: center;
+}
+
+.tyn-reply-bubble:hover .tyn-reply-tools {
+    opacity: 1;
+}
+
+.outgoing .tyn-reply-bubble {
+    flex-direction: row-reverse;
+}
+
+.tyn-reply-bubble {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: max-content;
+    max-width: 100%;
+}
+
+.tyn-reply-separator {
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-align: center;
+    padding: .375rem 1.5rem;
+}
+
+/* chat form */
+.tyn-chat-form {
+    display: flex;
+    align-items: flex-end;
+    background: #fff;
+    border-top: 1px solid #dbeafe;
+}
+
+.tyn-chat-form-insert {
+    padding: calc(1.5rem + 0.25rem) 1.5rem;
+}
+
+.tyn-chat-form-insert .btn {
+    border-radius: 100%;
+}
+
+.tyn-list-inline {
+    display: flex;
+}
+
+.tyn-chat-form-enter {
+    padding: 1.5rem 1.5rem 1.5rem 0;
+    flex-grow: 1;
+    display: flex;
+    align-items: flex-end;
+}
+
+.tyn-chat-form-input {
+    flex-grow: 1;
+    overflow: auto;
+    background-color: #e2e8f0;
+    margin-right: 0.5rem;
+    padding: 0.5rem 0.875rem;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    border-radius: 0.5rem;
+    border: unset;
+    outline: none;
+}
+
+.tyn-chat-form-input:focus-visible {
+    outline: none;
+}
+
+.EmojiPickerReact {
+    position: absolute !important;
+    bottom: 91px;
+}
+
+.upload_image_inp {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+/* new chat */
+.tyn-chat-form_wrapper {
+    background: #fff;
+    padding: calc(1.5rem + 0.25rem) 1.5rem;
+}
+
+.chat-form {
+    background: #ebf1f7;
+    padding: 0.5rem;
+    position: relative;
+}
+
+.btn-icon {
+    align-items: center;
+    display: inline-flex;
+    height: calc(1.6em + 1.1875rem + 4px);
+    justify-content: center;
+    line-height: 0;
+    padding: 0;
+    width: calc(1.6em + 1.1875rem + 4px);
+}
+
+.btn-icon:focus {
+    outline: none;
+    box-shadow: unset;
+}
+
+.chat-form .image-select-file {
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.btn-icon>svg {
+    height: 1rem;
+    width: 1rem;
+}
+
+.input-group-text {
+    align-items: center;
+    background-color: #ebf1f7;
+    border: 2px solid #ebf1f7;
+    color: #a0b3ce;
+    display: flex;
+    font-weight: 400;
+    line-height: 1.6;
+    padding: 0.59375rem 1.125rem;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.icon {
+    display: inline-block;
+    line-height: 1;
+}
+
+.chat-form .icon>svg {
+    height: 1rem;
+    width: 1rem;
+}
+
+.chat-form .chat_input {
+    background-color: #ebf1f7;
+    border: 2px solid #ebf1f7;
+}
+
+/* new chat */
+
+/* chat form */
+
+/* upload files */
+.reply-media {
+    color: #64748b;
+    background: #fff;
+    border-radius: inherit;
+    padding: 0.375rem;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+    width: 280px;
+}
+
+.tyn-thumb {
+    --image-border-color: #e2e8f0;
+    display: inline-block;
+    border: 1px solid#e2e8f0;
+    border-radius: 0.375rem;
+}
+
+.reply-media .tyn-thumb {
+    flex-grow: 1;
+    width: 80px;
+}
+
+.tyn-image {
+    width: 100%;
+    border-radius: 0.375rem;
+}
+
+.reply-media .tyn-image {
+    height: 100%;
+    object-fit: cover;
+}
+
+/* upload files */
+
+@media (min-width: 768px) {
+    .chat-content {
+        --aside-width: 320px;
+        padding-left: 360px;
+    }
+
+    .chat-sidebar-aside {
+        position: fixed;
+        left: 0;
+        top: 73px;
+        z-index: 1;
+    }
+}
+
+@media (min-width: 1400px) {
+    .chat-content {
+        --aside-width: 360px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .chat-sidebar-aside {
+        width: 100%;
+        height: calc(100dvh - 55px);
+    }
+}
+
+/* Contect */
+
+@media (min-width: 768px) {
+    .logo-icon {
+        height: 40px;
+    }
+
+    .logo-icon svg,
+    .logo-icon img {
+        height: 100%;
+    }
+
+    .tyn-chat-content {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        display: flex;
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 768px) {
+    .chat-content {
+        margin-top: 64px;
+        height: calc(100dvh - 56px);
+    }
+}
+
+@media (max-width: 400px) {
+    .tyn-chat-form {
+        flex-wrap: wrap;
+    }
+
+    .tyn-chat-form-enter {
+        padding: 0 1.5rem 1.5rem 1.5rem;
+    }
+
+    .tyn-chat-form-insert {
+        padding-bottom: 14px;
+    }
+}
