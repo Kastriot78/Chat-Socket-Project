@@ -39,3 +39,6 @@ Start react: cd client npm start
 
 PRVIEW PROJECT
 ![alt text](https://github.com/Kastriot78/Chat-Socket-Project/blob/main/project-preview/image1.jpg?raw=true)
+![alt text](https://github.com/Kastriot78/Chat-Socket-Project/blob/main/project-preview/image2.jpg?raw=true)
+![alt text](https://github.com/Kastriot78/Chat-Socket-Project/blob/main/project-preview/image3.jpg?raw=true)
+![alt text](https://github.com/Kastriot78/Chat-Socket-Project/blob/main/project-preview/image4.jpg?raw=true)
