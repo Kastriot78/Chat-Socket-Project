@@ -12,7 +12,7 @@ Welcome to the Real-Time Chat App! This application allows users to sign up, log
 
 ## Tech Stack
 
-- Frontend: React
+- Frontend: React, Redux Toolkit
 - Backend: Node.js with Express.js
 - Database: MongoDB
 
